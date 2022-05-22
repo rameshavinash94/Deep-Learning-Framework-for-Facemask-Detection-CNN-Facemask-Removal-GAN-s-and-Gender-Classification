@@ -11,10 +11,10 @@ https://www.canva.com/design/DAE96LHPDiE/gWwlP_Xbt7sU4qlzn5SR_w/view#1
 We have deployed our applicaiton in GCP.
 
 **MODULES:**
-1) DL model for Facemask Identification
-2) GAN Trained Model for uncovering face inside mask(face mask removal)
-3) Trained DL model for gender classification and celeb face identification.
-4) Perform mlops CI/CD pipeline and cloud deployment to the above approach
+1) DL model for Facemask Identification.
+2) GAN Trained Model for uncovering face inside mask(face mask removal).
+3) Trained DL model for gender classification.
+4) Perform mlops CI/CD pipeline and cloud deployment to the above approach.
 
 **MODULE 1***
 
