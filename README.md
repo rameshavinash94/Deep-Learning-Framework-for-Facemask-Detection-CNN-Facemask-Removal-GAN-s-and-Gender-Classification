@@ -32,7 +32,6 @@ BUILD Artifacts:
 
 **SAMPLE DEMO GIF**
 
-![](https://raw.githubusercontent.com/rameshavinash94/Cardiovascular-Detection-using-ECG-images/main/img/demo.gif)
-
+![]()
 
 **PROJECT PRESENTATION VIDEO:**
