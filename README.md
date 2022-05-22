@@ -16,7 +16,7 @@ We have deployed our applicaiton in GCP.
 3) Trained DL model for gender classification.
 4) Perform mlops CI/CD pipeline and cloud deployment to the above approach.
 
-**MODULE 1***
+**MODULE 1**
 
 **MODULE 2**
 
