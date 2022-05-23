@@ -1,12 +1,14 @@
 # Deep Learning Framework for Facemask Detection(CNN), Facemask Removal(GAN's), and Gender Classification(CNN)
 
 ## **ABSTRACT:**
-
+In the era of pandemics, wearing masks becomes a norm in every corner of society. Given the security risk of recording people on surveillance cameras, but not being able to detect the person's face, this paper provides solutions to the problem by building Machine Learning models to classify and predict if people are being masked or not, and furthermore predict what they might look like under the mask and the gender of such person. 
+Additionally, this technology can also be used for biometric authentication studies, such as unlocking a mobile phone while putting the face masked on. This project will be deployed on a simple web application easy for users to use.
 
 ## **PPT LINK:**
 https://www.canva.com/design/DAE96LHPDiE/gWwlP_Xbt7sU4qlzn5SR_w/view#1
 
 ## **DEPLOYMENT LINK:**
+https://cmpe258-face-mask-prediction-h-xxxqwcgfva-uc.a.run.app/ 
 
 We have deployed our applicaiton in GCP.
 
@@ -16,11 +18,24 @@ We have deployed our applicaiton in GCP.
 3) Trained DL model for gender classification.
 4) Perform mlops CI/CD pipeline and cloud deployment to the above approach.
 
-### **MODULE 1**
+### **MODULE 1 - DL model for Facemask Identification**
+Coronaviruses have recently become very common, contagious, and dangerous to the entire human population.The wearing of masks in public has become very common all over the world. This module includes a method for determining whether or not a face mask is worn. For this, we used a convolutional neural network. The model's accuracy is tested using various hyper parameters and multiple people at various frames.
 
-### **MODULE 2**
+Colab link : https://github.com/poojashreeNS/cmpe_258_GANProject/tree/main
 
-### **MODULE 3 - Gender - Classificaiton**
+Model link : https://drive.google.com/drive/folders/1ZFN9LBwMMDP0j957ktkTbluk0YtRFZEJ?usp=sharing
+
+**STEPS FOR RUNNING ONLY FACEMASK IDENTIFICATION MODULE:**
+
+Use the cell named prediction from the above colab url.
+Send the folder name to the function mask_prediction. if prediction is 0 then the face in the image contains mask, else if it is 1 then it doesn't contain mask.For now I have just added print statement and the image location for target 0 and 1, which can then be replaced by GAN for 0 and Classification model for 1.
+
+### **MODULE 2 - GAN Model for uncovering face inside mask(face mask removal)**
+
+### **MODULE 3 - Gender Classificaiton**
+
+Because of the variety of applications, human gender detection, which is part of facial recognition, has received a lot of attention. To implement our system, we first used image processing to apply a pre-processing technique to each image (). For feature extraction, the pre-processed image is passed through the Convolution, RELU, and Pooling layers. In the image classification section, a fully connected layer and a classifier are used. To achieve a better result, we implemented our system using various optimizers. The entire method was tested using two datasets obtained from the Kaggle website.
+Using the Kaggle dataset, the experimented result shows the highest accuracy of 95%.
 
 _**Perform Gender Classification using CNN**_
 
@@ -111,8 +126,9 @@ Dataset Link: _https://www.kaggle.com/datasets/cashutosh/gender-classification-d
  #### **NOTE: If we you want to use this model in web, use the Tflite model.**
 
 **MODULE 4**
+
 MLOPS CI/CD pipeline repo link : https://github.com/AbrahamKong/CMPE258_face_mask_prediction
-BUILD Artifacts:
+BUILD Artifacts: 
 
 ## **COMPLETE APPLICATION ARCHITECTURE FROM USER PRESPECTIVE**
 
@@ -120,9 +136,5 @@ BUILD Artifacts:
 
 ## **DEPLOYMENT ARCHITECTURE**
 ![](https://raw.githubusercontent.com/rameshavinash94/Cardiovascular-Detection-using-ECG-images/main/img/Deployment_diagram.png)
-
-## **SAMPLE DEMO GIF**
-
-![]()
 
 **PROJECT PRESENTATION VIDEO:**
