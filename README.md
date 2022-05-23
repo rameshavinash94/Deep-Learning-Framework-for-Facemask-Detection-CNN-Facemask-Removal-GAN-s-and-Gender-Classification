@@ -8,7 +8,10 @@ Additionally, this technology can also be used for biometric authentication stud
 https://www.canva.com/design/DAE96LHPDiE/gWwlP_Xbt7sU4qlzn5SR_w/view#1
 
 ## **DEPLOYMENT LINK:**
-https://cmpe258-face-mask-prediction-h-xxxqwcgfva-uc.a.run.app/ 
+Different Repo for CI/CD:
+MLOPS CI/CD pipeline repo link : https://github.com/AbrahamKong/CMPE258_face_mask_prediction
+
+Deployment url: https://cmpe258-face-mask-prediction-h-xxxqwcgfva-uc.a.run.app/ 
 
 We have deployed our applicaiton in GCP.
 
@@ -21,9 +24,9 @@ We have deployed our applicaiton in GCP.
 ### **MODULE 1 - DL model for Facemask Identification**
 Coronaviruses have recently become very common, contagious, and dangerous to the entire human population.The wearing of masks in public has become very common all over the world. This module includes a method for determining whether or not a face mask is worn. For this, we used a convolutional neural network. The model's accuracy is tested using various hyper parameters and multiple people at various frames.
 
-Colab link : https://github.com/poojashreeNS/cmpe_258_GANProject/tree/main
+colab link : https://github.com/poojashreeNS/cmpe_258_GANProject/tree/main
 
-Model link : https://drive.google.com/drive/folders/1ZFN9LBwMMDP0j957ktkTbluk0YtRFZEJ?usp=sharing
+Model and Dataset link : https://drive.google.com/drive/folders/1ZFN9LBwMMDP0j957ktkTbluk0YtRFZEJ?usp=sharing
 
 **STEPS FOR RUNNING ONLY FACEMASK IDENTIFICATION MODULE:**
 
@@ -31,6 +34,14 @@ Use the cell named prediction from the above colab url.
 Send the folder name to the function mask_prediction. if prediction is 0 then the face in the image contains mask, else if it is 1 then it doesn't contain mask.For now I have just added print statement and the image location for target 0 and 1, which can then be replaced by GAN for 0 and Classification model for 1.
 
 ### **MODULE 2 - GAN Model for uncovering face inside mask(face mask removal)**
+
+The goal of this module is to eliminate mask artifacts from facial images. The problem is divided into two stages: mask object identification and image completion of the mask region that has been removed. Our model's initial stage generates binary segmentation for the mask region automatically. The mask is then removed, and the afflicted region is synthesized with precise details while maintaining the overall coherency of the facial structure. We used a GAN-based network with two discriminators for this, with one discriminator learning the global structure of the face and the other discriminator focusing learning on the deep missing region. We created a matched synthetic dataset using the publicly available CelebA dataset and evaluated it on real world photos taken from the Internet to train our model in a supervised manner. In both qualitative and quantitative terms, our model outperforms previous typical state-of-the-art techniques.
+
+Colab: https://colab.research.google.com/drive/16WWd99idWzYVU9eI8kjc_6mgJEjMpMiG?usp=sharing
+
+Testing dataset: https://drive.google.com/drive/folders/1ZXAfrW74PAXRM5t21sbCrYWbvPilqVZy?usp=sharing 
+
+Training dataset : https://drive.google.com/drive/folders/1d5ykCL54XJd3BUVEfh9qD15OOfaH6F6q?usp=sharing
 
 ### **MODULE 3 - Gender Classificaiton**
 
@@ -126,9 +137,12 @@ Dataset Link: _https://www.kaggle.com/datasets/cashutosh/gender-classification-d
  #### **NOTE: If we you want to use this model in web, use the Tflite model.**
 
 **MODULE 4**
+Final Colab of all modules together: 
+
 
 MLOPS CI/CD pipeline repo link : https://github.com/AbrahamKong/CMPE258_face_mask_prediction
-BUILD Artifacts: 
+
+BUILD Artifacts:  https://raw.githubusercontent.com/rameshavinash94/CMPE258_final_Project/main/gcp_buildartifacts.txt
 
 ## **COMPLETE APPLICATION ARCHITECTURE FROM USER PRESPECTIVE**
 
