@@ -4,6 +4,12 @@
 In the era of pandemics, wearing masks becomes a norm in every corner of society. Given the security risk of recording people on surveillance cameras, but not being able to detect the person's face, this paper provides solutions to the problem by building Machine Learning models to classify and predict if people are being masked or not, and furthermore predict what they might look like under the mask and the gender of such person. 
 Additionally, this technology can also be used for biometric authentication studies, such as unlocking a mobile phone while putting the face masked on. This project will be deployed on a simple web application easy for users to use.
 
+
+## **COMPLETE APPLICATION ARCHITECTURE FROM USER PRESPECTIVE**
+
+![](https://github.com/rameshavinash94/CMPE258_final_Project/blob/main/img/applicaiton_flow.png?raw=true)
+
+
 ## **MODELS**
 **List of All Models:**
 
@@ -173,9 +179,6 @@ MLOPS CI/CD pipeline repo link : https://github.com/AbrahamKong/CMPE258_face_mas
 
 BUILD Artifacts:  https://raw.githubusercontent.com/rameshavinash94/CMPE258_final_Project/main/gcp_buildartifacts.txt
 
-## **COMPLETE APPLICATION ARCHITECTURE FROM USER PRESPECTIVE**
-
-![](https://github.com/rameshavinash94/CMPE258_final_Project/blob/main/img/applicaiton_flow.png?raw=true)
 
 ## **DEPLOYMENT ARCHITECTURE**
 ![](https://raw.githubusercontent.com/rameshavinash94/Cardiovascular-Detection-using-ECG-images/main/img/Deployment_diagram.png)
