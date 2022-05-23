@@ -4,6 +4,35 @@
 In the era of pandemics, wearing masks becomes a norm in every corner of society. Given the security risk of recording people on surveillance cameras, but not being able to detect the person's face, this paper provides solutions to the problem by building Machine Learning models to classify and predict if people are being masked or not, and furthermore predict what they might look like under the mask and the gender of such person. 
 Additionally, this technology can also be used for biometric authentication studies, such as unlocking a mobile phone while putting the face masked on. This project will be deployed on a simple web application easy for users to use.
 
+## **MODELS**
+**List of All Models:**
+
+Drive link : https://drive.google.com/drive/folders/1qghXvZAM4Ob1U0AsXDR0gOOPv1WodywI?usp=sharing 
+
+**Face Mask Detection Model:**
+
+part-a-model.sav
+
+**GAN Discriminator and Generator Models:**
+
+face_D_region
+
+face_D_whole
+
+FaceG
+
+MaskG
+
+face_checkpoints
+
+mask32_checkpoints
+
+**Gender Classification Models:**
+
+gender_detection.model
+
+**NOTE:** ALL THE METRICS AND VISUALIZATION CAN BE FOUND IN INDIVIDUAL COLAB NOTEBOOKS.
+
 ## **PPT LINK:**
 https://www.canva.com/design/DAE96LHPDiE/gWwlP_Xbt7sU4qlzn5SR_w/view#1
 
